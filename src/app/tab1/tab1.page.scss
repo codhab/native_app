@@ -1,0 +1,27 @@
+ion-content {
+  --padding-top: 80px !important;
+  --padding-bottom: 80px !important;
+  --background: #f9f9f9;
+}
+
+ion-card {
+  --background: white;
+  border-radius: 2px;
+  margin-top: 15px;
+  margin-bottom: 2px;
+  box-shadow: 0 1px 8px rgba(0,0,0,.12);
+}
+
+ion-card-header {
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+
+ion-card-title {
+  font-size: 18px;
+}
+
+ion-card-content {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
