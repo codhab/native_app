@@ -16,7 +16,6 @@ export class IframePage implements OnInit {
 
   ngOnInit() {
     let url_param = this.platform.getQueryParam("url")
-    url_param = url_param.replace("_", "/")
     url_param = environment.intranet_url + url_param
     this.url = this.sanitizer.bypassSecurityTrustResourceUrl(url_param)
   }
