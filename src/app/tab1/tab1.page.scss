@@ -1,5 +1,5 @@
 ion-content {
-  --padding-top: 80px !important;
+  --padding-top: 60px !important;
   --padding-bottom: 80px !important;
   --background: #f9f9f9;
 }
@@ -19,9 +19,17 @@ ion-card-header {
 
 ion-card-title {
   font-size: 18px;
+  color: #606062;
 }
 
 ion-card-content {
-  padding-top: 10px;
+  padding-top: 2px;
   padding-bottom: 10px;
+  padding-left: 0px;
+  font-size: 13px;
+}
+
+ion-icon {
+  text-align: center;
+  font-size: 60px;
 }

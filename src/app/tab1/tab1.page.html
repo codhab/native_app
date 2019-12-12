@@ -1,74 +1,173 @@
 <ion-content scrollbar-y-auto>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>
-        Pesquisa CPF
-      </ion-card-title>
-    </ion-card-header>
 
-    <ion-card-content>
-      Realize pesquisa cadastral informando CPF
-    </ion-card-content>
+  <ion-card (click)="openIframe('candidate_cadastres')">
+    <ion-grid>
+
+      <ion-row>
+        <ion-col size='3'>
+          <ion-icon name="search"></ion-icon>
+        </ion-col>
+
+        <ion-col size='9'>
+          <ion-card-title>
+            Pesquisa CPF
+          </ion-card-title>
+          <ion-card-content>
+            Realize pesquisa cadastral informando CPF
+          </ion-card-content>
+        </ion-col>
+
+      </ion-row>
+
+    </ion-grid>
   </ion-card>
 
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Meu cadastro</ion-card-title>
-    </ion-card-header>
-  
-    <ion-card-content>
-      Acesse seu cadastro, realize atualizações, obtenha informações
-    </ion-card-content>
+  <ion-card (click)="openIframe('candidate_lists')">
+    <ion-grid>
+    
+      <ion-row>
+        <ion-col size='3'>
+          <ion-icon name="list"></ion-icon>
+        </ion-col>
+    
+        <ion-col size='9'>
+          <ion-card-title>
+            Listas
+          </ion-card-title>
+          <ion-card-content>
+            Listas de candidatos por programa e situação
+          </ion-card-content>
+        </ion-col>
+    
+      </ion-row>
+    
+    </ion-grid>
   </ion-card>
 
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Requerimentos</ion-card-title>
-    </ion-card-header>
-  
-    <ion-card-content>
-      Acesse seu cadastro, realize atualizações, obtenha informações
-    </ion-card-content>
+  <ion-card (click)="openIframe('candidate_sessions')">
+
+    <ion-grid>
+    
+      <ion-row>
+        <ion-col size='3'>
+          <ion-icon name="person"></ion-icon>
+        </ion-col>
+    
+        <ion-col size='9'>
+          <ion-card-title>
+            Meu cadastro
+          </ion-card-title>
+          <ion-card-content>
+            Acesse seu cadastro, realize atualizações, obtenha informações
+          </ion-card-content>
+        </ion-col>
+    
+      </ion-row>
+    
+    </ion-grid>
+    
   </ion-card>
 
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Agendamentos</ion-card-title>
-    </ion-card-header>
-
-    <ion-card-content>
-      Acesse seu cadastro, realize atualizações, obtenha informações
-    </ion-card-content>
+  <ion-card (click)="openIframe('attendance_requeriments')">
+    <ion-grid>
+    
+      <ion-row>
+        <ion-col size='3'>
+          <ion-icon name="document"></ion-icon>
+        </ion-col>
+    
+        <ion-col size='9'>
+          <ion-card-title>
+            Requerimentos
+          </ion-card-title>
+          <ion-card-content>
+            Acesse seu cadastro, realize atualizações, obtenha informações
+          </ion-card-content>
+        </ion-col>
+    
+      </ion-row>
+    
+    </ion-grid>
   </ion-card>
 
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Entidades</ion-card-title>
-    </ion-card-header>
-  
-    <ion-card-content>
-      Pesquise CNPJ, visualize listas e informaçẽos sobre as entidades
-    </ion-card-content>
+  <ion-card (click)="openIframe('attendance_schedules')">
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size='3'>
+          <ion-icon name="calendar"></ion-icon>
+        </ion-col>
+    
+        <ion-col size='9'>
+          <ion-card-title>
+            Agendamentos
+          </ion-card-title>
+          <ion-card-content>
+            Acesse seu cadastro, realize atualizações, obtenha informações
+          </ion-card-content>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
   </ion-card>
 
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Minha entidade</ion-card-title>
-    </ion-card-header>
-  
-    <ion-card-content>
-      Acesse seu cadastro, realize atualizações, obtenha informações
-    </ion-card-content>
+  <ion-card (click)="openIframe('entity_dashboards')">
+    <ion-grid>
+      <ion-row>
+        <ion-col size='3'>
+          <ion-icon name="people"></ion-icon>
+        </ion-col>
+    
+        <ion-col size='9'>
+          <ion-card-title>
+            Entidades
+          </ion-card-title>
+          <ion-card-content>
+            Pesquise CNPJ, visualize listas e informaçẽos sobre as entidades
+          </ion-card-content>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+  <ion-card (click)="openIframe('entity_sessions')">
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size='3'>
+          <ion-icon name="home"></ion-icon>
+        </ion-col>
+    
+        <ion-col size='9'>
+          <ion-card-title>
+            Minha entidade
+          </ion-card-title>
+          <ion-card-content>
+            Acesse seu cadastro, realize atualizações, obtenha informações
+          </ion-card-content>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
   </ion-card>
  
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Assistência técnica</ion-card-title>
-    </ion-card-header>
+  <ion-card (click)="openIframe('attendance_requeriments')">
+    <ion-grid>
+      <ion-row>
+        <ion-col size='3'>
+          <ion-icon name="construct"></ion-icon>
+        </ion-col>
 
-    <ion-card-content>
-      Acesse seu cadastro, realize atualizações, obtenha informações
-    </ion-card-content>
+        <ion-col size='9'>
+          <ion-card-title>
+            Assistência técnica
+          </ion-card-title>
+          <ion-card-content>
+            Acesse seu cadastro, realize atualizações, obtenha informações
+          </ion-card-content>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </ion-card>
 
 </ion-content>
